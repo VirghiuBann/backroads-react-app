@@ -1,35 +1,27 @@
-import { tours } from '../data'
-
-const Tour = () => {
+const Tour = ({ image, date, title, info, location, duration, price }) => {
   return (
-    <div className='section-center featured-center'>
-      {tours.map((tour) => {
-        return (
-          <article className='tour-card'>
-            <div className='tour-img-container'>
-              <img src={tour.image} className='tour-img' alt='' />
-              <p className='tour-date'>{tour.date}</p>
-            </div>
-            <div className='tour-info'>
-              <div className='tour-title'>
-                <h4>{tour.title}</h4>
-              </div>
-              <p>{tour.info}</p>
-              <div className='tour-footer'>
-                <p>
-                  <span>
-                    <i className='fas fa-map'></i>
-                  </span>
-                  {tour.location}
-                </p>
-                <p>{tour.duration} days</p>
-                <p>from ${tour.price}</p>
-              </div>
-            </div>
-          </article>
-        )
-      })}
-    </div>
+    <article className='tour-card'>
+      <div className='tour-img-container'>
+        <img src={image} className='tour-img' alt='' />
+        <p className='tour-date'>{date}</p>
+      </div>
+      <div className='tour-info'>
+        <div className='tour-title'>
+          <h4>{title}</h4>
+        </div>
+        <p>{info}</p>
+        <div className='tour-footer'>
+          <p>
+            <span>
+              <i className='fas fa-map'></i>
+            </span>
+            {location}
+          </p>
+          <p>{duration} days</p>
+          <p>from ${price}</p>
+        </div>
+      </div>
+    </article>
   )
 }
 
