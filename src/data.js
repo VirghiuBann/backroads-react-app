@@ -1,3 +1,9 @@
+import image1 from './images/tour-1.jpeg'
+import image2 from './images/tour-2.jpeg'
+import image3 from './images/tour-3.jpeg'
+import image4 from './images/tour-4.jpeg'
+import image5 from './images/tour-5.jpeg'
+
 export const pageLinks = [
   {
     id: 1,
@@ -57,5 +63,58 @@ export const services = [
     icon: 'fas fa-socks fa-fw',
     title: 'amazing comfort',
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, officia.',
+  },
+]
+
+export const tours = [
+  {
+    id: 1,
+    image: image1,
+    date: 'august 26th, 2020',
+    title: 'Tibet Adventure',
+    info: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: 'china',
+    duration: '6',
+    price: '2100',
+  },
+  {
+    id: 2,
+    image: image2,
+    date: 'october 1th, 2020',
+    title: 'best of java',
+    info: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: 'indonesia',
+    duration: '11',
+    price: '1400',
+  },
+  {
+    id: 3,
+    image: image3,
+    date: 'september 15th, 2020',
+    title: 'explore hong kong',
+    info: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: 'hong kong',
+    duration: '8',
+    price: '5000',
+  },
+  {
+    id: 4,
+    image: image4,
+    date: 'december 5th, 2019',
+    title: 'kenya highlights',
+    info: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: 'kenya',
+    duration: '20',
+    price: '3300',
+  },
+  {
+    id: 5,
+    image: image5,
+    date: 'January 17th, 2020',
+    title: 'Africa safari',
+    info: ' Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque vitae tempore voluptatum maxime reprehenderit eum quod exercitationem fugit, qui corporis.',
+    location: 'Africa',
+    duration: '10',
+    price: '4000',
   },
 ]
